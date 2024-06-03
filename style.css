@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    width: 50%;
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    background-color: dimgray;
+}
+a{
+    font-size: 24px;
+}
+.icon{
+    display: none;
+}
+.kartinki{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5%;
+    margin-left: 5%;
+    margin-top: 50px;
+}
+
+#src_input{
+    border: 2px solid;
+    border-color: black;
+}
+#src_input.error{
+    border-color: red;
+}
+
+#add_tab{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 5%;
+    width: 100%;
+}
+
+#add_tab.open{
+    display: flex;
+}
+
+#img_popka{
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 80%;
+    display: none;
+}
+
+#img_popka.open{
+    display: flex;
+}
+
+.form{
+    width: 50%;
+    margin: auto;
+}
+
+.form .error{
+    color: red;
+    font-weight: bold;
+}
+.form .success{
+    color: green;
+    font-weight: bold;
+}
+
+.photo{
+    color: white;
+    text-decoration: none;
+}
+
+#big_image {
+    width: 80%;
+    margin-left: 10rem;
+    margin-top: 2rem;
+}
+
+.comments .form{
+    width: 80%;
+}
+.comments .form textarea{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1#image_text{
+    margin-left: 10rem;
+}
+
+p#image_author{
+    margin-left: 10rem;
+}
